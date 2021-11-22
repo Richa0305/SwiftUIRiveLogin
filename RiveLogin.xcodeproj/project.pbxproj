@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		272C8BD7C62060E1401B04DB /* Pods_RiveLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECA300E2EE24FC679B11BB7 /* Pods_RiveLoginTests.framework */; };
+		33A310E3274A14BF00CC5044 /* RiveLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A310E2274A14BF00CC5044 /* RiveLoginApp.swift */; };
+		33A310E5274A14BF00CC5044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A310E4274A14BF00CC5044 /* ContentView.swift */; };
+		33A310E7274A14C100CC5044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A310E6274A14C100CC5044 /* Assets.xcassets */; };
+		33A310EA274A14C100CC5044 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A310E9274A14C100CC5044 /* Preview Assets.xcassets */; };
+		33A310F4274A14C100CC5044 /* RiveLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A310F3274A14C100CC5044 /* RiveLoginTests.swift */; };
+		33A310FE274A14C100CC5044 /* RiveLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A310FD274A14C100CC5044 /* RiveLoginUITests.swift */; };
+		33A31100274A14C100CC5044 /* RiveLoginUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A310FF274A14C100CC5044 /* RiveLoginUITestsLaunchTests.swift */; };
+		33A31111274A18E300CC5044 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A31110274A18E300CC5044 /* Utility.swift */; };
+		33A31131274A7F9100CC5044 /* RiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A31130274A7F9100CC5044 /* RiveController.swift */; };
+		33A31135274AC53D00CC5044 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A31134274AC53D00CC5044 /* Color+Extension.swift */; };
+		33A31137274B56FA00CC5044 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A31136274B56FA00CC5044 /* Constants.swift */; };
+		33A31139274B59F200CC5044 /* RiveLoginViewBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A31138274B59F200CC5044 /* RiveLoginViewBridge.swift */; };
+		33A3113F274B6D0900CC5044 /* teddy_login_screen.riv in Resources */ = {isa = PBXBuildFile; fileRef = 33A3113E274B6CC800CC5044 /* teddy_login_screen.riv */; };
+		C6445C63B8A5D6E38DD62A9A /* Pods_RiveLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF63976CC3487C1594154298 /* Pods_RiveLogin.framework */; };
+		EA71801791C0B8D16F3A2067 /* Pods_RiveLogin_RiveLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F9E466DF9BAA7A22987487 /* Pods_RiveLogin_RiveLoginUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33A310F0274A14C100CC5044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33A310D7274A14BF00CC5044 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33A310DE274A14BF00CC5044;
+			remoteInfo = RiveLogin;
+		};
+		33A310FA274A14C100CC5044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33A310D7274A14BF00CC5044 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33A310DE274A14BF00CC5044;
+			remoteInfo = RiveLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16F9E466DF9BAA7A22987487 /* Pods_RiveLogin_RiveLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiveLogin_RiveLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC88CDE60D0FF38C2F4F3AF /* Pods-RiveLogin-RiveLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveLogin-RiveLoginUITests.release.xcconfig"; path = "Target Support Files/Pods-RiveLogin-RiveLoginUITests/Pods-RiveLogin-RiveLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
+		33A310DF274A14BF00CC5044 /* RiveLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiveLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A310E2274A14BF00CC5044 /* RiveLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiveLoginApp.swift; sourceTree = "<group>"; };
+		33A310E4274A14BF00CC5044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		33A310E6274A14C100CC5044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33A310E9274A14C100CC5044 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		33A310EF274A14C100CC5044 /* RiveLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiveLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A310F3274A14C100CC5044 /* RiveLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiveLoginTests.swift; sourceTree = "<group>"; };
+		33A310F9274A14C100CC5044 /* RiveLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiveLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A310FD274A14C100CC5044 /* RiveLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiveLoginUITests.swift; sourceTree = "<group>"; };
+		33A310FF274A14C100CC5044 /* RiveLoginUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiveLoginUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		33A31110274A18E300CC5044 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		33A31130274A7F9100CC5044 /* RiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiveController.swift; sourceTree = "<group>"; };
+		33A31134274AC53D00CC5044 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		33A31136274B56FA00CC5044 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		33A31138274B59F200CC5044 /* RiveLoginViewBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiveLoginViewBridge.swift; sourceTree = "<group>"; };
+		33A3113E274B6CC800CC5044 /* teddy_login_screen.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = teddy_login_screen.riv; sourceTree = "<group>"; };
+		3DEF1909D43385DF0B4A2AB8 /* Pods-RiveLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveLoginTests.debug.xcconfig"; path = "Target Support Files/Pods-RiveLoginTests/Pods-RiveLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55C577B7640CE9EDB4E62E1B /* Pods-RiveLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveLogin.debug.xcconfig"; path = "Target Support Files/Pods-RiveLogin/Pods-RiveLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		8ECA300E2EE24FC679B11BB7 /* Pods_RiveLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiveLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14358669CB2DF8D90004A41 /* Pods-RiveLogin-RiveLoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveLogin-RiveLoginUITests.debug.xcconfig"; path = "Target Support Files/Pods-RiveLogin-RiveLoginUITests/Pods-RiveLogin-RiveLoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A69F185A32C184D8E96ABBFC /* Pods-RiveLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveLoginTests.release.xcconfig"; path = "Target Support Files/Pods-RiveLoginTests/Pods-RiveLoginTests.release.xcconfig"; sourceTree = "<group>"; };
+		CF63976CC3487C1594154298 /* Pods_RiveLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiveLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCDAC2C74A655E4DB99A036F /* Pods-RiveLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveLogin.release.xcconfig"; path = "Target Support Files/Pods-RiveLogin/Pods-RiveLogin.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33A310DC274A14BF00CC5044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6445C63B8A5D6E38DD62A9A /* Pods_RiveLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33A310EC274A14C100CC5044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272C8BD7C62060E1401B04DB /* Pods_RiveLoginTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33A310F6274A14C100CC5044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA71801791C0B8D16F3A2067 /* Pods_RiveLogin_RiveLoginUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33A310D6274A14BF00CC5044 = {
+			isa = PBXGroup;
+			children = (
+				33A310E1274A14BF00CC5044 /* RiveLogin */,
+				33A310F2274A14C100CC5044 /* RiveLoginTests */,
+				33A310FC274A14C100CC5044 /* RiveLoginUITests */,
+				33A310E0274A14BF00CC5044 /* Products */,
+				F806065E56C041D309285FA2 /* Pods */,
+				D95658372EF09025C6609CA1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33A310E0274A14BF00CC5044 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33A310DF274A14BF00CC5044 /* RiveLogin.app */,
+				33A310EF274A14C100CC5044 /* RiveLoginTests.xctest */,
+				33A310F9274A14C100CC5044 /* RiveLoginUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33A310E1274A14BF00CC5044 /* RiveLogin */ = {
+			isa = PBXGroup;
+			children = (
+				33A3113B274B5B4900CC5044 /* Constants */,
+				33A3113A274B5B2300CC5044 /* RiveLoginResources */,
+				33A31112274A191000CC5044 /* Assets */,
+				33A3110F274A18B800CC5044 /* utility */,
+				33A310E2274A14BF00CC5044 /* RiveLoginApp.swift */,
+				33A310E4274A14BF00CC5044 /* ContentView.swift */,
+				33A310E6274A14C100CC5044 /* Assets.xcassets */,
+				33A310E8274A14C100CC5044 /* Preview Content */,
+			);
+			path = RiveLogin;
+			sourceTree = "<group>";
+		};
+		33A310E8274A14C100CC5044 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				33A310E9274A14C100CC5044 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		33A310F2274A14C100CC5044 /* RiveLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				33A310F3274A14C100CC5044 /* RiveLoginTests.swift */,
+			);
+			path = RiveLoginTests;
+			sourceTree = "<group>";
+		};
+		33A310FC274A14C100CC5044 /* RiveLoginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				33A310FD274A14C100CC5044 /* RiveLoginUITests.swift */,
+				33A310FF274A14C100CC5044 /* RiveLoginUITestsLaunchTests.swift */,
+			);
+			path = RiveLoginUITests;
+			sourceTree = "<group>";
+		};
+		33A3110F274A18B800CC5044 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				33A31110274A18E300CC5044 /* Utility.swift */,
+				33A31134274AC53D00CC5044 /* Color+Extension.swift */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		33A31112274A191000CC5044 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				33A3113E274B6CC800CC5044 /* teddy_login_screen.riv */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		33A3113A274B5B2300CC5044 /* RiveLoginResources */ = {
+			isa = PBXGroup;
+			children = (
+				33A31138274B59F200CC5044 /* RiveLoginViewBridge.swift */,
+				33A31130274A7F9100CC5044 /* RiveController.swift */,
+			);
+			path = RiveLoginResources;
+			sourceTree = "<group>";
+		};
+		33A3113B274B5B4900CC5044 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				33A31136274B56FA00CC5044 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D95658372EF09025C6609CA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF63976CC3487C1594154298 /* Pods_RiveLogin.framework */,
+				16F9E466DF9BAA7A22987487 /* Pods_RiveLogin_RiveLoginUITests.framework */,
+				8ECA300E2EE24FC679B11BB7 /* Pods_RiveLoginTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F806065E56C041D309285FA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55C577B7640CE9EDB4E62E1B /* Pods-RiveLogin.debug.xcconfig */,
+				FCDAC2C74A655E4DB99A036F /* Pods-RiveLogin.release.xcconfig */,
+				A14358669CB2DF8D90004A41 /* Pods-RiveLogin-RiveLoginUITests.debug.xcconfig */,
+				2DC88CDE60D0FF38C2F4F3AF /* Pods-RiveLogin-RiveLoginUITests.release.xcconfig */,
+				3DEF1909D43385DF0B4A2AB8 /* Pods-RiveLoginTests.debug.xcconfig */,
+				A69F185A32C184D8E96ABBFC /* Pods-RiveLoginTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33A310DE274A14BF00CC5044 /* RiveLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33A31103274A14C100CC5044 /* Build configuration list for PBXNativeTarget "RiveLogin" */;
+			buildPhases = (
+				839609F4D295639F67F0D979 /* [CP] Check Pods Manifest.lock */,
+				33A310DB274A14BF00CC5044 /* Sources */,
+				33A310DC274A14BF00CC5044 /* Frameworks */,
+				33A310DD274A14BF00CC5044 /* Resources */,
+				59FBAE6F7279CD2653A8B1C7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RiveLogin;
+			productName = RiveLogin;
+			productReference = 33A310DF274A14BF00CC5044 /* RiveLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33A310EE274A14C100CC5044 /* RiveLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33A31106274A14C100CC5044 /* Build configuration list for PBXNativeTarget "RiveLoginTests" */;
+			buildPhases = (
+				CF7F13A4E5375957E9A6F71F /* [CP] Check Pods Manifest.lock */,
+				33A310EB274A14C100CC5044 /* Sources */,
+				33A310EC274A14C100CC5044 /* Frameworks */,
+				33A310ED274A14C100CC5044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33A310F1274A14C100CC5044 /* PBXTargetDependency */,
+			);
+			name = RiveLoginTests;
+			productName = RiveLoginTests;
+			productReference = 33A310EF274A14C100CC5044 /* RiveLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33A310F8274A14C100CC5044 /* RiveLoginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33A31109274A14C100CC5044 /* Build configuration list for PBXNativeTarget "RiveLoginUITests" */;
+			buildPhases = (
+				E0CADB142A7D460AD7E02DBD /* [CP] Check Pods Manifest.lock */,
+				33A310F5274A14C100CC5044 /* Sources */,
+				33A310F6274A14C100CC5044 /* Frameworks */,
+				33A310F7274A14C100CC5044 /* Resources */,
+				B42C412BB38B7A28D63346F7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33A310FB274A14C100CC5044 /* PBXTargetDependency */,
+			);
+			name = RiveLoginUITests;
+			productName = RiveLoginUITests;
+			productReference = 33A310F9274A14C100CC5044 /* RiveLoginUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33A310D7274A14BF00CC5044 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					33A310DE274A14BF00CC5044 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					33A310EE274A14C100CC5044 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 33A310DE274A14BF00CC5044;
+					};
+					33A310F8274A14C100CC5044 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 33A310DE274A14BF00CC5044;
+					};
+				};
+			};
+			buildConfigurationList = 33A310DA274A14BF00CC5044 /* Build configuration list for PBXProject "RiveLogin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33A310D6274A14BF00CC5044;
+			productRefGroup = 33A310E0274A14BF00CC5044 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33A310DE274A14BF00CC5044 /* RiveLogin */,
+				33A310EE274A14C100CC5044 /* RiveLoginTests */,
+				33A310F8274A14C100CC5044 /* RiveLoginUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33A310DD274A14BF00CC5044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A3113F274B6D0900CC5044 /* teddy_login_screen.riv in Resources */,
+				33A310EA274A14C100CC5044 /* Preview Assets.xcassets in Resources */,
+				33A310E7274A14C100CC5044 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33A310ED274A14C100CC5044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33A310F7274A14C100CC5044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59FBAE6F7279CD2653A8B1C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RiveLogin/Pods-RiveLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RiveLogin/Pods-RiveLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RiveLogin/Pods-RiveLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		839609F4D295639F67F0D979 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RiveLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B42C412BB38B7A28D63346F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RiveLogin-RiveLoginUITests/Pods-RiveLogin-RiveLoginUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RiveLogin-RiveLoginUITests/Pods-RiveLogin-RiveLoginUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RiveLogin-RiveLoginUITests/Pods-RiveLogin-RiveLoginUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF7F13A4E5375957E9A6F71F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RiveLoginTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0CADB142A7D460AD7E02DBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RiveLogin-RiveLoginUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33A310DB274A14BF00CC5044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A31139274B59F200CC5044 /* RiveLoginViewBridge.swift in Sources */,
+				33A31135274AC53D00CC5044 /* Color+Extension.swift in Sources */,
+				33A31111274A18E300CC5044 /* Utility.swift in Sources */,
+				33A310E5274A14BF00CC5044 /* ContentView.swift in Sources */,
+				33A31131274A7F9100CC5044 /* RiveController.swift in Sources */,
+				33A310E3274A14BF00CC5044 /* RiveLoginApp.swift in Sources */,
+				33A31137274B56FA00CC5044 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33A310EB274A14C100CC5044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A310F4274A14C100CC5044 /* RiveLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33A310F5274A14C100CC5044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A31100274A14C100CC5044 /* RiveLoginUITestsLaunchTests.swift in Sources */,
+				33A310FE274A14C100CC5044 /* RiveLoginUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33A310F1274A14C100CC5044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33A310DE274A14BF00CC5044 /* RiveLogin */;
+			targetProxy = 33A310F0274A14C100CC5044 /* PBXContainerItemProxy */;
+		};
+		33A310FB274A14C100CC5044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33A310DE274A14BF00CC5044 /* RiveLogin */;
+			targetProxy = 33A310FA274A14C100CC5044 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		33A31101274A14C100CC5044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33A31102274A14C100CC5044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33A31104274A14C100CC5044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C577B7640CE9EDB4E62E1B /* Pods-RiveLogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RiveLogin/Preview Content\"";
+				DEVELOPMENT_TEAM = BT6R3M5NK3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harsivo.RiveLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33A31105274A14C100CC5044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCDAC2C74A655E4DB99A036F /* Pods-RiveLogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RiveLogin/Preview Content\"";
+				DEVELOPMENT_TEAM = BT6R3M5NK3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harsivo.RiveLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		33A31107274A14C100CC5044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DEF1909D43385DF0B4A2AB8 /* Pods-RiveLoginTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BT6R3M5NK3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harsivo.RiveLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiveLogin.app/RiveLogin";
+			};
+			name = Debug;
+		};
+		33A31108274A14C100CC5044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A69F185A32C184D8E96ABBFC /* Pods-RiveLoginTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BT6R3M5NK3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harsivo.RiveLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiveLogin.app/RiveLogin";
+			};
+			name = Release;
+		};
+		33A3110A274A14C100CC5044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A14358669CB2DF8D90004A41 /* Pods-RiveLogin-RiveLoginUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BT6R3M5NK3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harsivo.RiveLoginUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RiveLogin;
+			};
+			name = Debug;
+		};
+		33A3110B274A14C100CC5044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DC88CDE60D0FF38C2F4F3AF /* Pods-RiveLogin-RiveLoginUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BT6R3M5NK3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harsivo.RiveLoginUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RiveLogin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33A310DA274A14BF00CC5044 /* Build configuration list for PBXProject "RiveLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A31101274A14C100CC5044 /* Debug */,
+				33A31102274A14C100CC5044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33A31103274A14C100CC5044 /* Build configuration list for PBXNativeTarget "RiveLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A31104274A14C100CC5044 /* Debug */,
+				33A31105274A14C100CC5044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33A31106274A14C100CC5044 /* Build configuration list for PBXNativeTarget "RiveLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A31107274A14C100CC5044 /* Debug */,
+				33A31108274A14C100CC5044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33A31109274A14C100CC5044 /* Build configuration list for PBXNativeTarget "RiveLoginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A3110A274A14C100CC5044 /* Debug */,
+				33A3110B274A14C100CC5044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33A310D7274A14BF00CC5044 /* Project object */;
+}

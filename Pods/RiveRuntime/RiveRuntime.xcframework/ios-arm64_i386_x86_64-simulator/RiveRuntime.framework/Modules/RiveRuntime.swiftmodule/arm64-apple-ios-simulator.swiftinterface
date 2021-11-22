@@ -1,0 +1,117 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RiveRuntime
+@_exported import RiveRuntime
+import Swift
+import UIKit
+public typealias LoopAction = ((Swift.String, Swift.Int) -> Swift.Void)?
+public protocol LoopDelegate : AnyObject {
+  func loop(_ animationName: Swift.String, type: Swift.Int)
+}
+public typealias PlaybackAction = ((Swift.String) -> Swift.Void)?
+public typealias InputsAction = (([RiveRuntime.StateMachineInput]) -> Swift.Void)?
+public protocol PlayDelegate : AnyObject {
+  func play(_ animationName: Swift.String, isStateMachine: Swift.Bool)
+}
+public protocol PauseDelegate : AnyObject {
+  func pause(_ animationName: Swift.String, isStateMachine: Swift.Bool)
+}
+public protocol StopDelegate : AnyObject {
+  func stop(_ animationName: Swift.String, isStateMachine: Swift.Bool)
+}
+public protocol InputsDelegate : AnyObject {
+  func inputs(_ inputs: [RiveRuntime.StateMachineInput])
+}
+public protocol StateChangeDelegate : AnyObject {
+  func stateChange(_ stateMachineName: Swift.String, _ stateName: Swift.String)
+}
+public enum Playback {
+  case play
+  case pause
+  case stop
+  public static func == (a: RiveRuntime.Playback, b: RiveRuntime.Playback) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public enum StateMachineInputType {
+  case trigger
+  case number
+  case boolean
+  public static func == (a: RiveRuntime.StateMachineInputType, b: RiveRuntime.StateMachineInputType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct StateMachineInput : Swift.Hashable {
+  public let name: Swift.String
+  public let type: RiveRuntime.StateMachineInputType
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: RiveRuntime.StateMachineInput, b: RiveRuntime.StateMachineInput) -> Swift.Bool
+}
+@objc public class RiveView : UIKit.UIView {
+  @objc deinit
+  public var animations: [RiveRuntime.RiveLinearAnimationInstance]
+  public var playingAnimations: Swift.Set<RiveRuntime.RiveLinearAnimationInstance>
+  public var stateMachines: [RiveRuntime.RiveStateMachineInstance]
+  public var playingStateMachines: Swift.Set<RiveRuntime.RiveStateMachineInstance>
+  weak public var loopDelegate: RiveRuntime.LoopDelegate?
+  weak public var playDelegate: RiveRuntime.PlayDelegate?
+  weak public var pauseDelegate: RiveRuntime.PauseDelegate?
+  weak public var stopDelegate: RiveRuntime.StopDelegate?
+  weak public var inputsDelegate: RiveRuntime.InputsDelegate?
+  weak public var stateChangeDelegate: RiveRuntime.StateChangeDelegate?
+  public init(riveFile: RiveRuntime.RiveFile, fit: RiveRuntime.Fit = .fitContain, alignment: RiveRuntime.Alignment = .alignmentCenter, autoplay: Swift.Bool = true, artboard: Swift.String? = nil, animation: Swift.String? = nil, stateMachine: Swift.String? = nil, loopDelegate: RiveRuntime.LoopDelegate? = nil, playDelegate: RiveRuntime.PlayDelegate? = nil, pauseDelegate: RiveRuntime.PauseDelegate? = nil, stopDelegate: RiveRuntime.StopDelegate? = nil, inputsDelegate: RiveRuntime.InputsDelegate? = nil, stateChangeDelegate: RiveRuntime.StateChangeDelegate? = nil) throws
+  @objc dynamic public init()
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+}
+extension RiveView : RiveRuntime.RiveFileDelegate {
+  @objc dynamic public func riveFileDidLoad(_ riveFile: RiveRuntime.RiveFile) throws
+}
+extension RiveView {
+  open var fit: RiveRuntime.Fit {
+    get
+    set(newValue)
+  }
+  open var alignment: RiveRuntime.Alignment {
+    get
+    set(newValue)
+  }
+  open var artboard: RiveRuntime.RiveArtboard? {
+    get
+  }
+  open func configure(_ riveFile: RiveRuntime.RiveFile, andArtboard artboard: Swift.String? = nil, andAnimation animation: Swift.String? = nil, andStateMachine stateMachine: Swift.String? = nil, andAutoPlay autoPlay: Swift.Bool = true) throws
+  open func artboardNames() -> [Swift.String]
+  open func animationNames() -> [Swift.String]
+  open func stateMachineNames() -> [Swift.String]
+  open func isArtboard(name: Swift.String) -> Swift.Bool
+  open func stateMachineInputs() throws -> [RiveRuntime.StateMachineInput]
+}
+extension RiveView {
+  open var isPlaying: Swift.Bool {
+    get
+  }
+  @objc override dynamic public func draw(_ rect: CoreGraphics.CGRect)
+  open func advance(delta: Swift.Double)
+}
+extension RiveView {
+  public func reset(artboard: Swift.String? = nil, animation: Swift.String? = nil, stateMachine: Swift.String? = nil) throws
+  public func play(loop: RiveRuntime.Loop = .loopAuto, direction: RiveRuntime.Direction = .directionAuto) throws
+  public func play(animationName: Swift.String, loop: RiveRuntime.Loop = .loopAuto, direction: RiveRuntime.Direction = .directionAuto, isStateMachine: Swift.Bool = false) throws
+  public func play(animationNames: [Swift.String], loop: RiveRuntime.Loop = .loopAuto, direction: RiveRuntime.Direction = .directionAuto, isStateMachine: Swift.Bool = false) throws
+  public func pause()
+  public func pause(animationName: Swift.String, isStateMachine: Swift.Bool = false)
+  public func pause(animationNames: [Swift.String], isStateMachine: Swift.Bool = false)
+  public func stop()
+  public func stop(animationName: Swift.String, isStateMachine: Swift.Bool = false)
+  public func stop(animationNames: [Swift.String], isStateMachine: Swift.Bool = false)
+  open func fireState(_ stateMachineName: Swift.String, inputName: Swift.String) throws
+  open func setBooleanState(_ stateMachineName: Swift.String, inputName: Swift.String, value: Swift.Bool) throws
+  open func setNumberState(_ stateMachineName: Swift.String, inputName: Swift.String, value: Swift.Float) throws
+}

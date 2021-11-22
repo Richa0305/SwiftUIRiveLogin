@@ -1,0 +1,6 @@
+framework module Pods_RiveLogin_RiveLoginUITests {
+  umbrella header "Pods-RiveLogin-RiveLoginUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
